@@ -11,11 +11,19 @@ private:
 	int year;
 public:
 	Vehicle(string, int);
-	void setManufacturer(string);
-	void setYear(int);
-	string getManufacturer();
-	int getYear();
-	void displayInfo();
+	void setManufacturer(string m) {
+		manufacturer = m;
+	}
+	void setYear(int y) {
+		year = y;
+	}
+	string getManufacturer() const {
+		return manufacturer;
+	}
+	int getYear() const {
+		return year;
+	}
+	void displayInfo() const;
 };
 
 #endif
