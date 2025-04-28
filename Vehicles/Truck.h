@@ -14,7 +14,7 @@ public:
 	void setCapacity(int c) {
 		capacity = c;
 	}
-	void displayInfo();
+	void displayInfo() const;
 };
 
 #endif
